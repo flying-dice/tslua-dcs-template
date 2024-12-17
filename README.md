@@ -85,9 +85,9 @@ You should see the log message `Hello World!` in the DCS log file.
 
 Using the Hot Loader https://dcs-dropzone-registry-viewer.pages.dev/#/hot-loader
 
-You can use the DCS Hot Loader script to deploy into the mission environment (MAKE SURE YOU UPDATE THE PATH):
+You can use the DCS Hot Loader script to deploy into the mission environment (update the path to reflect the location of your script):
 ```shell
-curl --location 'http://127.0.0.1:7943/dofile' --header 'Content-Type: application/json' --data '{ "path": "C:\\Users\\jonat\\Projects\\tslua-dcs-template\\build\\tslua-dcs-template-mission.lua", "target": "mission" }'
+curl --location 'http://127.0.0.1:7943/dofile' --header 'Content-Type: application/json' --data '{ "path": "C:\\Users\\username\\Projects\\tslua-dcs-template\\build\\tslua-dcs-template-mission.lua", "target": "mission" }'
 ```
 
 ## Key Files
