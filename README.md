@@ -1,6 +1,6 @@
 # tslua-dcs-template
 
-This is a template for creating a new DCS mission using the [tslua-dcs](https://tslua-dcs.pages.dev/) tooling.
+This is a template for creating a new DCS script using the [tslua-dcs](https://tslua-dcs.pages.dev/) tooling.
 
 **tslua-dcs** allows you to write **TypeScript** code for **DCS (Digital Combat Simulator)** scripting, leveraging TypeScript’s static typing, modern features, and robust tooling. It transpiles into **Lua**, providing improved developer productivity, reduced runtime errors, and enhanced code maintainability. With `tslua-dcs`, you can enjoy a modern development experience while integrating with DCS's Lua scripting APIs, making it ideal for creating reliable and scalable mission scripts.
 
