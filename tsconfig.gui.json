@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "include": [
+    "src/gui/**/*", "src/common/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "build",
+    "types": [
+      "lua-types/5.1",
+      "@flying-dice/tslua-dcs-gui-types",
+      "@typescript-to-lua/language-extensions"
+    ]
+  },
+  "tstl": {
+    "sourceMapTraceback": true,
+    "luaBundleEntry": "src/gui/index.ts",
+    "luaBundle": "tslua-dcs-template-gui.lua",
+    "noResolvePaths": ["socket"],
+    "luaLibImport": "require-minimal",
+    "luaTarget": "5.1"
+  }
+}

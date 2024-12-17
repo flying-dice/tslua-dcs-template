@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "include": ["src/mission/**/*", "src/common/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "build",
+    "types": [
+      "lua-types/5.1",
+      "@flying-dice/tslua-dcs-mission-types",
+      "@typescript-to-lua/language-extensions"
+    ]
+  },
+  "tstl": {
+    "sourceMapTraceback": true,
+    "luaBundleEntry": "src/mission/index.ts",
+    "luaBundle": "tslua-dcs-template-mission.lua",
+    "noResolvePaths": ["socket"],
+    "luaLibImport": "require-minimal",
+    "luaTarget": "5.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "tslua-dcs-template",
+  "version": "0.0.1",
+  "description": "Simple Demonstration of tslua with DCS",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build:gui": "tstl -p tsconfig.gui.json",
+    "build:mission": "tstl -p tsconfig.mission.json",
+    "build": "npm run build:gui && npm run build:mission"
+  },
+  "devDependencies": {
+    "@flying-dice/tslua-dcs-gui-types": "^0.32.12",
+    "@flying-dice/tslua-dcs-mission-types": "^0.32.12",
+    "lua-types": "^2.13.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-to-lua": "^1.28.1"
+  }
+}
