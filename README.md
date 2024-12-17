@@ -81,6 +81,15 @@ You should see the log message `Hello World!` in the DCS log file.
 2024-12-17 13:15:36.034 INFO    SCRIPTING (Main): Group: Ground-1
 ```
 
+### Hot Deployment
+
+Using the Hot Loader https://dcs-dropzone-registry-viewer.pages.dev/#/hot-loader
+
+You can use the DCS Hot Loader script to deploy into the mission environment (MAKE SURE YOU UPDATE THE PATH):
+```shell
+curl --location 'http://127.0.0.1:7943/dofile' --header 'Content-Type: application/json' --data '{ "path": "C:\\Users\\jonat\\Projects\\tslua-dcs-template\\build\\tslua-dcs-template-mission.lua", "target": "mission" }'
+```
+
 ## Key Files
 
 ### `package.json`
@@ -105,7 +114,7 @@ See `https://www.digitalcombatsimulator.com/en/support/faq/scripting_engine/` fo
 ### `src/common/index.ts`
 This file exports a common message used in both the GUI and mission scripts, demonstrating code reuse between different parts of the project.
 
-This should only contain code that is shared between the GUI and mission scripts and doesnt have access to the DCS API at all.
+This should only contain code that is shared between the GUI and mission scripts and doesn't have access to the DCS API at all.
 
 Examples of code that could be in here:
 - Constants
