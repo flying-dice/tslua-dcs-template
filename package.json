@@ -10,7 +10,7 @@
     "build": "npm run build:gui && npm run build:mission"
   },
   "devDependencies": {
-    "@flying-dice/tslua-dcs-gui-types": "^0.32.12",
+    "@flying-dice/tslua-dcs-gui-types": "^0.32.14",
     "@flying-dice/tslua-dcs-mission-types": "^0.32.12",
     "lua-types": "^2.13.1",
     "typescript": "^5.7.2",
